@@ -14,7 +14,6 @@ class HeaterState(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, id: str=None, state: str=None):  # noqa: E501
         """HeaterState - a model defined in Swagger
 
@@ -32,7 +31,6 @@ class HeaterState(Model):
             'id': 'id',
             'state': 'state'
         }
-
         self._id = id
         self._state = state
 

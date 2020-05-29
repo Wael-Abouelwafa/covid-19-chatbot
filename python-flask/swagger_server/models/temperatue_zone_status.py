@@ -14,7 +14,6 @@ class TemperatueZoneStatus(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, id: str=None, name: str=None, value: float=None, units: str='fahrenheit', timestamp: datetime=None):  # noqa: E501
         """TemperatueZoneStatus - a model defined in Swagger
 
@@ -44,7 +43,6 @@ class TemperatueZoneStatus(Model):
             'units': 'units',
             'timestamp': 'timestamp'
         }
-
         self._id = id
         self._name = name
         self._value = value

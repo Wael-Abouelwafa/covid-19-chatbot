@@ -14,7 +14,6 @@ class DeviceRegistrationInfo(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, uri: str=None, id: str=None):  # noqa: E501
         """DeviceRegistrationInfo - a model defined in Swagger
 
@@ -32,7 +31,6 @@ class DeviceRegistrationInfo(Model):
             'uri': 'uri',
             'id': 'id'
         }
-
         self._uri = uri
         self._id = id
 

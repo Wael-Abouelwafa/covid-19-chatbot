@@ -14,7 +14,6 @@ class TemperatureZone(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, id: int=None, name: str=None, input_position: int=None, output_position: int=None, zone: str=None):  # noqa: E501
         """TemperatureZone - a model defined in Swagger
 
@@ -44,7 +43,6 @@ class TemperatureZone(Model):
             'output_position': 'outputPosition',
             'zone': 'zone'
         }
-
         self._id = id
         self._name = name
         self._input_position = input_position

@@ -14,7 +14,6 @@ class WeatherForecast(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, summary: str=None, description: str=None, icon: str=None):  # noqa: E501
         """WeatherForecast - a model defined in Swagger
 
@@ -36,7 +35,6 @@ class WeatherForecast(Model):
             'description': 'description',
             'icon': 'icon'
         }
-
         self._summary = summary
         self._description = description
         self._icon = icon

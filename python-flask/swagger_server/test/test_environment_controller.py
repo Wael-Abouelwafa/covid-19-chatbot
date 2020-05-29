@@ -23,8 +23,7 @@ class TestEnvironmentController(BaseTestCase):
         """
         response = self.client.open(
             '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/temperature/forecast/{days}'.format(days=56),
-            method='GET',
-            content_type='application/json')
+            method='GET')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -34,9 +33,8 @@ class TestEnvironmentController(BaseTestCase):
         
         """
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/temperature/{zoneId}/heater'.format(zoneId='zoneId_example'),
-            method='GET',
-            content_type='application/json')
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/temperature/{zoneId}/heater'.format(zone_id='zone_id_example'),
+            method='GET')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -46,9 +44,8 @@ class TestEnvironmentController(BaseTestCase):
         
         """
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/temperature/{zoneId}'.format(zoneId='zoneId_example'),
-            method='GET',
-            content_type='application/json')
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/temperature/{zoneId}'.format(zone_id='zone_id_example'),
+            method='GET')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -58,9 +55,8 @@ class TestEnvironmentController(BaseTestCase):
         
         """
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/temperature/{zoneId}/heater/{state}'.format(zoneId='zoneId_example', state='state_example'),
-            method='POST',
-            content_type='application/json')
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/temperature/{zoneId}/heater/{state}'.format(zone_id='zone_id_example', state='state_example'),
+            method='POST')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -71,8 +67,7 @@ class TestEnvironmentController(BaseTestCase):
         """
         response = self.client.open(
             '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/temperature',
-            method='GET',
-            content_type='application/json')
+            method='GET')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 

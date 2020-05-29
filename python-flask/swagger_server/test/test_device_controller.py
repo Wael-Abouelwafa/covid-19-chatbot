@@ -22,7 +22,6 @@ class TestDeviceController(BaseTestCase):
         response = self.client.open(
             '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/devices',
             method='GET',
-            content_type='application/json',
             query_string=query_string)
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
@@ -32,11 +31,11 @@ class TestDeviceController(BaseTestCase):
 
         
         """
-        device = DeviceRegistrationInfo()
+        body = DeviceRegistrationInfo()
         response = self.client.open(
             '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/devices',
             method='POST',
-            data=json.dumps(device),
+            data=json.dumps(body),
             content_type='application/json')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))

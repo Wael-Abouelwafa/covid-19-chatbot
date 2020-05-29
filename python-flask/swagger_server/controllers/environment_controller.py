@@ -22,39 +22,39 @@ def get_forecast(days):  # noqa: E501
     return 'do some magic!'
 
 
-def get_heater_state(zoneId):  # noqa: E501
+def get_heater_state(zone_id):  # noqa: E501
     """get_heater_state
 
     gets the state of the heater # noqa: E501
 
-    :param zoneId: 
-    :type zoneId: str
+    :param zone_id: 
+    :type zone_id: str
 
     :rtype: HeaterState
     """
     return 'do some magic!'
 
 
-def get_zone_temperature(zoneId):  # noqa: E501
+def get_zone_temperature(zone_id):  # noqa: E501
     """get_zone_temperature
 
      # noqa: E501
 
-    :param zoneId: 
-    :type zoneId: str
+    :param zone_id: 
+    :type zone_id: str
 
     :rtype: TemperatueZoneStatus
     """
     return 'do some magic!'
 
 
-def set_heater_state(zoneId, state):  # noqa: E501
+def set_heater_state(zone_id, state):  # noqa: E501
     """set_heater_state
 
     turns the heater on or off # noqa: E501
 
-    :param zoneId: 
-    :type zoneId: str
+    :param zone_id: 
+    :type zone_id: str
     :param state: 
     :type state: str
 

@@ -21,8 +21,7 @@ class TestZWaveController(BaseTestCase):
         """
         response = self.client.open(
             '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lightingSummary',
-            method='GET',
-            content_type='application/json')
+            method='GET')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -32,9 +31,8 @@ class TestZWaveController(BaseTestCase):
         
         """
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/switches/{deviceId}'.format(deviceId='deviceId_example'),
-            method='GET',
-            content_type='application/json')
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/switches/{deviceId}'.format(device_id='device_id_example'),
+            method='GET')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -44,9 +42,8 @@ class TestZWaveController(BaseTestCase):
         
         """
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/dimmers/{deviceId}/{value}'.format(deviceId='deviceId_example', value=100),
-            method='POST',
-            content_type='application/json')
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/dimmers/{deviceId}/{value}'.format(device_id='device_id_example', value=100),
+            method='POST')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -57,9 +54,8 @@ class TestZWaveController(BaseTestCase):
         """
         query_string = [('units', 'milliseconds')]
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/dimmers/{deviceId}/{value}/timer/{timeunit}'.format(deviceId='deviceId_example', value=56, timeunit=56),
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/dimmers/{deviceId}/{value}/timer/{timeunit}'.format(device_id='device_id_example', value=56, timeunit=56),
             method='POST',
-            content_type='application/json',
             query_string=query_string)
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
@@ -70,9 +66,8 @@ class TestZWaveController(BaseTestCase):
         
         """
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/switches/{deviceId}/{value}'.format(deviceId='deviceId_example', value='value_example'),
-            method='POST',
-            content_type='application/json')
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/switches/{deviceId}/{value}'.format(device_id='device_id_example', value='value_example'),
+            method='POST')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -82,9 +77,8 @@ class TestZWaveController(BaseTestCase):
         
         """
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/switches/{deviceId}/{value}/timer/{minutes}'.format(deviceId='deviceId_example', value='value_example', minutes=56),
-            method='POST',
-            content_type='application/json')
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/lighting/switches/{deviceId}/{value}/timer/{minutes}'.format(device_id='device_id_example', value='value_example', minutes=56),
+            method='POST')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 

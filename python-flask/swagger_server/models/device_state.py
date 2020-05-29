@@ -14,7 +14,6 @@ class DeviceState(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, id: str=None, name: str=None, last_update: datetime=None, level: int=None):  # noqa: E501
         """DeviceState - a model defined in Swagger
 
@@ -40,7 +39,6 @@ class DeviceState(Model):
             'last_update': 'lastUpdate',
             'level': 'level'
         }
-
         self._id = id
         self._name = name
         self._last_update = last_update

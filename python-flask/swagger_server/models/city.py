@@ -14,7 +14,6 @@ class City(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, id: int=None, name: str=None, lat: float=None, lon: float=None, country: str=None):  # noqa: E501
         """City - a model defined in Swagger
 
@@ -44,7 +43,6 @@ class City(Model):
             'lon': 'lon',
             'country': 'country'
         }
-
         self._id = id
         self._name = name
         self._lat = lat

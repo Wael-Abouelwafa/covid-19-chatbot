@@ -6,6 +6,8 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
+from swagger_server.models.temperatue_zone_status import TemperatueZoneStatus  # noqa: F401,E501
+from swagger_server.models.temperature_zone import TemperatureZone  # noqa: F401,E501
 from swagger_server import util
 
 
@@ -14,7 +16,6 @@ class TemperatureSummary(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, zones: List[TemperatureZone]=None, zone_status: List[TemperatueZoneStatus]=None):  # noqa: E501
         """TemperatureSummary - a model defined in Swagger
 
@@ -32,7 +33,6 @@ class TemperatureSummary(Model):
             'zones': 'zones',
             'zone_status': 'zoneStatus'
         }
-
         self._zones = zones
         self._zone_status = zone_status
 

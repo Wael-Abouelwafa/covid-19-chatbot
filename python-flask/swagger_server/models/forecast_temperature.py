@@ -14,7 +14,6 @@ class ForecastTemperature(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, low: float=None, high: float=None, morning: float=None, day: float=None, evening: float=None, night: float=None):  # noqa: E501
         """ForecastTemperature - a model defined in Swagger
 
@@ -48,7 +47,6 @@ class ForecastTemperature(Model):
             'evening': 'evening',
             'night': 'night'
         }
-
         self._low = low
         self._high = high
         self._morning = morning

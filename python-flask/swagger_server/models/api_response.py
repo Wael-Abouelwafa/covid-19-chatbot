@@ -14,7 +14,6 @@ class ApiResponse(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, code: int=None, message: str=None):  # noqa: E501
         """ApiResponse - a model defined in Swagger
 
@@ -32,7 +31,6 @@ class ApiResponse(Model):
             'code': 'code',
             'message': 'message'
         }
-
         self._code = code
         self._message = message
 

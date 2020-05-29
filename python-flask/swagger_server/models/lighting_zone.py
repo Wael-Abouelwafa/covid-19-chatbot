@@ -14,7 +14,6 @@ class LightingZone(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, id: str=None, name: str=None, device_id: int=None, device_type: str=None, zone: str=None):  # noqa: E501
         """LightingZone - a model defined in Swagger
 
@@ -44,7 +43,6 @@ class LightingZone(Model):
             'device_type': 'deviceType',
             'zone': 'zone'
         }
-
         self._id = id
         self._name = name
         self._device_id = device_id

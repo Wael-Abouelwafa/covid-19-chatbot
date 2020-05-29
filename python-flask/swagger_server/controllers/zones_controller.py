@@ -15,13 +15,13 @@ def get_zones():  # noqa: E501
     return 'do some magic!'
 
 
-def quiet_zone(zoneId):  # noqa: E501
+def quiet_zone(zone_id):  # noqa: E501
     """quiet_zone
 
      # noqa: E501
 
-    :param zoneId: 
-    :type zoneId: str
+    :param zone_id: 
+    :type zone_id: str
 
     :rtype: None
     """

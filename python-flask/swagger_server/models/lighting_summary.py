@@ -6,6 +6,8 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
+from swagger_server.models.lighting_zone import LightingZone  # noqa: F401,E501
+from swagger_server.models.lighting_zone_status import LightingZoneStatus  # noqa: F401,E501
 from swagger_server import util
 
 
@@ -14,7 +16,6 @@ class LightingSummary(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, zones: List[LightingZone]=None, zone_status: List[LightingZoneStatus]=None):  # noqa: E501
         """LightingSummary - a model defined in Swagger
 
@@ -32,7 +33,6 @@ class LightingSummary(Model):
             'zones': 'zones',
             'zone_status': 'zoneStatus'
         }
-
         self._zones = zones
         self._zone_status = zone_status
 

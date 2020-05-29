@@ -6,6 +6,8 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
+from swagger_server.models.forecast_temperature import ForecastTemperature  # noqa: F401,E501
+from swagger_server.models.weather_forecast import WeatherForecast  # noqa: F401,E501
 from swagger_server import util
 
 
@@ -14,7 +16,6 @@ class Forecast(Model):
 
     Do not edit the class manually.
     """
-
     def __init__(self, _date: datetime=None, pressure: float=None, humidity: int=None, wind_speed: float=None, clouds: int=None, temperature: ForecastTemperature=None, weather: WeatherForecast=None):  # noqa: E501
         """Forecast - a model defined in Swagger
 
@@ -52,7 +53,6 @@ class Forecast(Model):
             'temperature': 'temperature',
             'weather': 'weather'
         }
-
         self.__date = _date
         self._pressure = pressure
         self._humidity = humidity

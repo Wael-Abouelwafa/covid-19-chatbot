@@ -18,8 +18,7 @@ class TestZonesController(BaseTestCase):
         """
         response = self.client.open(
             '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/zones',
-            method='GET',
-            content_type='application/json')
+            method='GET')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
@@ -29,9 +28,8 @@ class TestZonesController(BaseTestCase):
         
         """
         response = self.client.open(
-            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/zones/{zoneId}/quiet'.format(zoneId='zoneId_example'),
-            method='GET',
-            content_type='application/json')
+            '/Wael-Abouelwafa/All_In_One_Covid-19/1.0.0/zones/{zoneId}/quiet'.format(zone_id='zone_id_example'),
+            method='GET')
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 

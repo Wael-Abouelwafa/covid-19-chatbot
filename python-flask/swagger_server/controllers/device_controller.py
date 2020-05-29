@@ -20,16 +20,16 @@ def get_devices(skip=None, limit=None):  # noqa: E501
     return 'do some magic!'
 
 
-def register(device=None):  # noqa: E501
+def register(body=None):  # noqa: E501
     """register
 
      # noqa: E501
 
-    :param device: 
-    :type device: dict | bytes
+    :param body: 
+    :type body: dict | bytes
 
     :rtype: None
     """
     if connexion.request.is_json:
-        device = DeviceRegistrationInfo.from_dict(connexion.request.get_json())  # noqa: E501
+        body = DeviceRegistrationInfo.from_dict(connexion.request.get_json())  # noqa: E501
     return 'do some magic!'
